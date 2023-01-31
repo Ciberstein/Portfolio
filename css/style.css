@@ -74,7 +74,13 @@ html, body {
 @media (max-width: 920px){
 
     .art-info-bar {
-        display: none;
+        display: flex;
+        position: absolute;
+        z-index: 10000;
+        height: calc(100% - 50px);
+        width: 290px;
+        left: -150%;
+        transition: 1000ms ease;
     }
     .art-content {
         width: calc(100% - 290px);
@@ -90,6 +96,7 @@ html, body {
         z-index: 10000;
         height: calc(100% - 50px);
         width: 290px;
+        left: 0;
     }
 
     .art-app-container {
